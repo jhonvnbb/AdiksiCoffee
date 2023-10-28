@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <link rel = "stylesheet" href = "style.css" />
+        <style>
+            #jam {
+                font-size: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "isi">
+
+        <div class = "navbar">
+            <ul class = "ul-navbar">
+                <li class = "li-navbar">
+                    <a href = "index.html" class = "a-navbar">Youtube</a>
+                </li>
+                <li class = "li-navbar">
+                    <a href = "about.html" class = "a-navbar">Instagram</a>
+                </li>
+                <li class = "li-navbar">
+                    <a href = "contact.html" class = "a-navbar">Whatsapp</a>
+                </li>
+            </ul>
+        <!-- NavigationBar End -->
+        </div>
+        <div class = "content">
+            <a href = "https://instagram.com/jhonnvnbb?igshid=OGQ5ZDc2ODk2ZA==" class = "a-content">
+                <img src = "aa.jpg" class = "img-content"/>
+                <p>follow yeuw</p>
+            </a>
+            <!-- Content End -->
+        </div>
+        <div class = "footer">
+            <h3 class = "h3-footer">Jhon V.Nababan</h3>
+            <!-- Footer End -->
+        </div>
+        <div class = "clock">
+            <div id="jam"></div>
+            <script>
+                function tampilkanJam() {
+                    var waktu = new Date();
+                    var jam = waktu.getHours();
+                    var menit = waktu.getMinutes();
+                    var detik = waktu.getSeconds();
+                    var waktuStr = jam + " : " + menit + " : " + detik;
+                    document.getElementById("jam").textContent = waktuStr;
+                }
+                setInterval(tampilkanJam, 1000);
+                tampilkanJam(); // Tampilkan jam saat halaman dimuat pertama kali
+            </script>
+        </div>
+    
+        </div>
+    </body>
+</html>
